@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css" />
+    <title>Sifu - Contato</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="Titulo">Contato</h1>
+      <p class="inicio">
+        Tem alguma dúvida,feedback ou quer receber notificações sobre o nosso
+        site?
+      </p>
+    </header>
+    <main class="container-formulario">
+      <form class="formulario-sifu">
+        <div class="campo">
+          <label for="nome">Seu Nome</label>
+          <input type="text" id="nome" placeholder="Ex: Pak Mei" required />
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto">
+            <option value="suporte">Suporte Técnico</option>
+            <option value="feedback">Feedback do Site</option>
+            <option value="feedback">Quero receber atualizações</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensagem">Sua Mensagem</label>
+          <textarea
+            id="mensagem"
+            rows="6"
+            placeholder="Escreva aqui sua mensagem..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+      </form>
+      <div class="voltar">
+        <a href="Pagina inicial.html" class="botao"
+          ><h2>Voltar ao Início</h2></a
+        >
+      </div>
+    </main>
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p>
+          &copy; 2026 Gustavo Misael dos Santos Vitali. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
