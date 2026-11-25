@@ -96,3 +96,18 @@ h1, h2, h5 { letter-spacing: .03em; }
 /* Rodapé */
 footer { border-top-color: var(--sifu-red-dark) !important; }
  /*# sourceMappingURL=bootstrap.min.css.map */
+  /* Efeito de transição nos títulos de seção e textos dos cards */
+  h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  h2:hover {
+    transform: translateX(8px);
+    color: #dc3545;
+  }
+
+  .card p, .card h5 {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .card:hover h5 {
+    transform: translateY(-2px);
+  }
