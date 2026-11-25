@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <title>SIFU</title>
   </head>
-  <body class="bg-danger-subtle text-white" data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">SIFU</a>
+  <body class="text-light" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+             src="../img/logo-removebg-preview.png"
+              alt="SIFU"
+              height="36"
+                class="d-inline-block align-text-top"/>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -17,218 +23,240 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Alternar navegação"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav  gap-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Jogabilidade.html">Jogabilidade</a>
+              <a class="nav-link" href="#jogabilidade">Jogabilidade</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">R</a>
+              <a class="nav-link" href="#controles">Controles</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#recepcao">Recepção</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid my-5 px-4">
-      <div class="card mb-3 shadow-lg" style="min-height: 400px">
-        <div class="row g-0 h-100">
-          <div
-            class="col-md-5 d-flex justify-content-center align-items-center p-4"
-          >
+
+    <main class="container my-5">
+      <section class="card bg-dark border-secondary-subtle shadow-lg mb-5 overflow-hidden">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-5">
             <img
               src="../img/aa (1).jpg"
-              class="img-fluid rounded"
+              class="img-fluid  rounded"
               alt="Capa do jogo SIFU"
             />
           </div>
-          <div class="col-md-7 d-flex align-items-center">
-            <div class="card-body p-4 p-md-5">
-              <h2 class="card-title display-5 fw-bold mb-3">SIFU</h2>
-
-              <p class="card-text fs-5">
-                Sifu é um jogo eletrônico de ação-aventura e beat 'em up
-                desenvolvido e publicado pelo estúdio francês Sloclap. Foi
-                lançado em 8 de fevereiro de 2022 para Microsoft Windows,
-                PlayStation 4 e PlayStation 5 e depois lançado para Nintendo
-                Switch, Xbox One e Xbox Series X/S. O jogo recebeu avaliações
-                positivas da crítica, e vendeu mais de um milhão de unidades até
-                março de 2022.
+          <div class="col-md-7">
+            <div class="card-body p-4 p-lg-5">
+              <h1 class="display-4 fw-bold mb-3">SIFU</h1>
+              <p class="lead text-body-secondary mb-4">
+                Desenvolvido pelo estúdio francês Sloclap, Sifu é uma jornada intensa de kung fu e vingança. Lançado para PC, PlayStation, Xbox e Nintendo Switch, o título conquistou a crítica e superou 1 milhão de cópias logo no primeiro mês.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="card mb-3 shadow-lg" style="min-height: 400px">
-      <div class="row g-0 h-100">
+      </section>
+
+
+      <section id="jogabilidade" class="mb-5 pt-3">
+        <h2 class="fw-bold border-start border-danger border-4 ps-3 mb-4">
+          Jogabilidade
+        </h2>
+        <div class="card bg-dark border-secondary-subtle shadow-lg">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <img
+                src="../img/jogabilidade.jpeg"
+                class="img-fluid w-100 h-100 object-fit-cover rounded-start"
+                style="min-height: 320px"
+                alt="Combate de artes marciais em SIFU"
+              />
+            </div>
+            <div class="col-lg-7">
+              <div class="card-body p-4 p-lg-5">
+                <p class="mb-4">
+                  Inspirado no mestre Pai Mei, o sistema de combate conta com mais de <strong>150 ataques únicos</strong>, permitindo aparar golpes, esquivar na hora certa e usar o cenário ou armas improvisadas contra grupos de inimigos.
+                </p>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="p-3 rounded bg-body-tertiary border border-secondary-subtle h-100">
+                      <h5 class="text-danger fw-semibold">Medidor Estrutural</h5>
+                      <p class="small text-body-secondary mb-0">
+                        Bloquear ou sofrer golpes enche a barra de estrutura. Quando ela quebra, o alvo fica vulnerável a finalizações.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded bg-body-tertiary border border-secondary-subtle h-100">
+                      <h5 class="text-danger fw-semibold">Envelhecimento</h5>
+                      <p class="small text-body-secondary mb-0">
+                        Ao morrer, você ressuscita mais velho: seus golpes ficam mais fortes, mas sua vida máxima diminui.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded bg-body-tertiary border border-secondary-subtle h-100">
+                      <h5 class="text-danger fw-semibold">Santuários e Wuguan</h5>
+                      <p class="small text-body-secondary mb-0">
+                        Desbloqueie habilidades permanentes nos santuários e treine combos na escola de kung fu entre fases.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded bg-body-tertiary border border-secondary-subtle h-100">
+                      <h5 class="text-danger fw-semibold">Quadro de Detetive</h5>
+                      <p class="small text-body-secondary mb-0">
+                        Pistas coletadas ficam salvas entre tentativas, liberando atalhos e caminhos secretos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Controles (com espaçamento g-4 e altura uniforme) -->
+      <section id="controles" class="mb-5 pt-3">
+        <h2 class="fw-bold border-start border-danger border-4 ps-3 mb-4">
+          Controles
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card bg-dark border-secondary-subtle h-100 shadow">
+              <img
+                src="../img/controle.jpg"
+                class="card-img-top object-fit-cover"
+                style="height: 260px"
+                alt="Mapeamento no controle de PS5"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Controle (PS5 / Consoles)</h5>
+                <p class="card-text text-body-secondary">
+                  Mapeamento otimizado com resposta tátil para esquivas direcionais e aparar golpes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark border-secondary-subtle h-100 shadow">
+              <img
+                src="../img/teclado.png"
+                class="card-img-top object-fit-cover"
+                style="height: 260px"
+                alt="Mapeamento no teclado e mouse para PC"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Teclado e Mouse (PC)</h5>
+                <p class="card-text text-body-secondary">
+                  Configuração de teclas para movimentação rápida, câmera livre e combos no PC.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Recepção (visível no mobile e com indicadores) -->
+      <section id="recepcao" class="mb-5 pt-3">
+        <h2 class="fw-bold border-start border-danger border-4 ps-3 mb-4">
+          Recepção da Crítica
+        </h2>
         <div
-          class="col-md-5 d-flex justify-content-center align-items-center p-4"
+          id="carouselExampleCaptions"
+          class="carousel slide mx-auto shadow-lg rounded overflow-hidden border border-secondary-subtle"
+          style="max-width: 900px"
+          data-bs-ride="carousel"
         >
-          <img
-            src="../img/jogabilidade.jpeg"
-            class="img-fluid rounded"
-            alt=""
-          />
-        </div>
-        <div class="col-md-7 d-flex align-items-center">
-          <div class="card-body p-4 p-md-5">
-            <h2 class="card-title display-5 fw-bold mb-3">Jogabilidade</h2>
-
-            <p class="card-text fs-5">
-              O jogo, inspirado no mestre em artes marciais Pai Mei, inclui mais
-              de 150 ataques únicos. Movimentos básicos de ataque podem ser
-              encadeados, embora alguns combos possam conceder aos jogadores
-              oportunidades táticas adicionais, como derrubar inimigos ou
-              atordoá-los.O protagonista e todos os personagens e inimigos
-              hostis possuem um "medidor estrutural". Quando o medidor estiver
-              completamente cheio, a guarda desses personagens quebrará e eles
-              ficarão vulneráveis a ataques finais. Os jogadores também podem
-              bloquear ataques, embora isso preencha gradualmente seu medidor.
-              Alternativamente, os jogadores também podem evitar ataques ou
-              aparar quando um inimigo está prestes a desferir um golpe.Um
-              desvio bem-sucedido permite que o jogador atordoe o inimigo ou
-              jogue-o em uma direção específica.
-              <br />O jogo permite que os jogadores aproveitem o ambiente e
-              improvisem novos ataques ou alterem sua estratégia diante de um
-              oponente mais forte. Por exemplo, o jogador pode chutar um inimigo
-              de uma borda ou utilizar vários objetos como armas improvisadas. O
-              último inimigo em uma seção de combate às vezes pode entrar em um
-              estado de frenesi descontrolado, essencialmente se tornando um
-              minichefe.<br />
-              Ocasionalmente, o jogador pode ser apresentado a opções de
-              diálogo, o que pode permitir que ele evite o combate por completo,
-              dependendo de sua escolha de palavras. Quando o jogador morre no
-              jogo, ele é magicamente ressuscitado no local onde morre e
-              envelhece vários anos. À medida que o personagem do jogador
-              envelhece, seus ataques serão mais poderosos, mas ele terá menos
-              vida. Os jogadores encontrarão santuários, que serão o local onde
-              eles curam e desbloqueiam novas habilidades.<br />
-              Eles também podem visitar o "wuguan", uma escola de kung fu, para
-              praticar suas habilidades entre os níveis. As habilidades são
-              perdidas quando o personagem do jogador morre, embora seja
-              possível desbloquear atualizações permanentementes para que elas
-              fiquem disponíveis no início de cada partida. À medida que o
-              jogador completa várias partidas, ele pode acessar o "quadro de
-              detetive", onde as informações coletadas em diferentes partidas
-              serão armazenadas, e áreas secretas e atalhos podem se abrir.
-            </p>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <img src="../img/controle.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Controle</h5>
-          <p class="card-text">Controles no controle de PS5</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../img/teclado.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Teclado</h5>
-          <p class="card-text">Controles no teclado se jogar no PC</p>
-        </div>
-      </div>
-    </div>
-    <h1>Recepção</h1>
-    <!-- max-width limita a largura total e mx-auto centraliza na tela -->
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide mx-auto my-4 shadow rounded overflow-hidden"
-      style="max-width: 900px"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- height fixa a altura e object-fit-cover ajusta a imagem sem distorcer -->
-          <img
-            src="../img/IGN.jpg"
-            class="d-block w-100 object-fit-cover"
-            style="height: 450px"
-            alt="Avaliação IGN"
-          />
-          <div
-            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
-          >
-            <h5 class="text-white">IGN</h5>
-            <p class="mb-0 text-white">
-              A IGN chamou o jogo de "totalmente intransigente em seu design" e
-              elogiou a sua narrativa, combate, controle áptico, ambientação e
-              estrutura, apesar de notar pequenos problemas com a câmera.
-            </p>
-          </div>
-        </div>
 
-        <div class="carousel-item">
-          <img
-            src="../img/destructoid.jpg"
-            class="d-block w-100 object-fit-cover"
-            style="height: 450px"
-            alt="..."
-          />
-          <div
-            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
-          >
-            <h5 class="text-white">Destructoid</h5>
-            <p class="mb-0 text-white">
-              A Destructoid chamou-o de "uma batalha constante e difícil" e
-              "intensamente recompensadora", concluindo: "Sifu é um desafio que
-              vale a pena enfrentar e superar. É uma história de vingança com um
-              pouco de coração no final e, embora não possa pousar
-              perfeitamente, possui muito estilo e ação que vale a pena
-              apoiá-lo."
-            </p>
-          </div>
-        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../img/IGN.jpg"
+                class="d-block w-100 object-fit-cover"
+                style="height: 450px"
+                alt="Avaliação IGN"
+              />
+              <div class="carousel-caption bg-black bg-opacity-75 rounded p-3 mb-3">
+                <h5 class="text-danger fw-bold">IGN</h5>
+                <p class="mb-0 small text-white">
+                  A IGN chamou o jogo de "totalmente intransigente em seu design" e
+                  elogiou a sua narrativa, combate, controle áptico, ambientação e
+                  estrutura, apesar de notar pequenos problemas com a câmera.                </p>
+              </div>
+            </div>
 
-        <div class="carousel-item">
-          <img
-            src="..."
-            class="d-block w-100 object-fit-cover"
-            style="height: 450px"
-            alt="..."
-          />
-          <div
-            class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
-          >
-            <h5>Third slide label</h5>
-            <p class="mb-0 text-white">
-              Some representative placeholder content for the third slide.
-            </p>
+            <div class="carousel-item">
+              <img
+                src="../img/destructoid.jpg"
+                class="d-block w-100 object-fit-cover"
+                style="height: 450px"
+                alt="Avaliação Destructoid"
+              />
+              <div class="carousel-caption bg-black bg-opacity-75 rounded p-3 mb-3">
+                <h5 class="text-danger fw-bold">Destructoid</h5>
+                <p class="mb-0 small text-white">
+                  A Destructoid chamou-o de "uma batalha constante e difícil" e
+                 "intensamente recompensadora", concluindo: "Sifu é um desafio que
+                 vale a pena enfrentar e superar. É uma história de vingança com um
+                  pouco de coração no final e, embora não possa pousar perfeitamente,
+                 possui muito estilo e ação que vale a pena apoiá-lo."                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="../img/GameInformer.jfif"
+                class="d-block w-100 object-fit-cover"
+                style="height: 450px"
+                alt="Avaliação Metacritic"
+              />
+              <div class="carousel-caption bg-black bg-opacity-75 rounded p-3 mb-3">
+                <h5 class="text-danger fw-bold">Game Informer</h5>
+                <p class="mb-0 small text-white">
+                   A análise da Game Informer foi um pouco menos positiva sobre a
+            estrutura do jogo, elogiando seu combate por se afastar dos padrões,
+            mas criticando a sua rotina cansativa.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
+      </section>
+    </main>
+
+    <footer class="bg-body-tertiary border-top border-secondary-subtle py-4 text-center text-body-secondary small">
+      <div class="container">
+        Projeto de fã sobre <strong>SIFU</strong> • Desenvolvido com Bootstrap 5
       </div>
+    </footer>
 
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
