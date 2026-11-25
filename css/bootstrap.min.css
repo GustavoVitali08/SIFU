@@ -85,10 +85,7 @@ h1, h2, h5 { letter-spacing: .03em; }
   border-color: var(--sifu-gold) !important;
   transform: translateY(-3px);
 }
-.card bg-dark:hover {
-   border-color: var(--sifu-gold) !important;
-  transform: translateY(-3px);
-}
+
 /* Carrossel */
 .carousel-caption { border-left: 3px solid var(--sifu-red); }
 .carousel-indicators [data-bs-target] { background-color: var(--sifu-gold); }
