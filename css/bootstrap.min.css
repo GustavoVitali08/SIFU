@@ -66,12 +66,6 @@ body {
   font-weight: 600;
 }
 
-/* Badges */
-.text-bg-danger { background-color: var(--sifu-red) !important; }
-.text-bg-secondary {
-  background-color: var(--sifu-gold) !important;
-  color: var(--sifu-ink) !important;
-}
 
 /* Títulos de seção */
 h2.border-danger { border-color: var(--sifu-red) !important; }
